@@ -1,0 +1,83 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*Custom Properties*/
+
+:root {
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-seconday: 'Soruce Code Pro', monospace;
+
+    --fw-reg:300;
+    --fw-bold:900;
+
+    --clr-light: #a23e4a;
+    --clr-dark: #572336;
+    --clr-accent: #ff9575;
+    --clr-text: #000000;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+}
+
+@media (min-width: 800px) {
+    :root {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+}
+
+/*General Properties*/
+
+body{
+    background: var(--clr-dark);
+    color: var(--clr-accent);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+}
+
+image{
+    display: block;
+    max-width: 100%;
+}
+
+
+/*Type rules*/
+
+h1,
+h2,
+h3 {
+    line-height: 1.1;
+    margin: 0;
+}
+
+h1{ font-size: var(--fs-h1)}
+h2{ font-size: var(--fs-h2)}
+h3{ font-size: var(--fs-h3)}
+
+.section__title {
+    margin-bottom: 0.25em;
+}
+
+.section__subtitle--intro{
+    font-weight: var(--fw-reg);
+}
+
+.section__subtitle {
+    margin: 0;
+    font-size: var(--fs-h3);
+}
+
+.section__subtitle--intro,
+.section__subtitle--about {
+    background: var(--clr-light);
+    font-family: var(--ff-seconday);
+}
