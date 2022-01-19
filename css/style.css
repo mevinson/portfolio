@@ -12,11 +12,16 @@
 
     --fw-reg:300;
     --fw-bold:900;
-
+    /*
     --clr-light: #a23e4a;
     --clr-dark: #572336;
     --clr-accent: #ff9575;
     --clr-text: #000000;
+    */
+    --clr-light: #ec85b8;
+    --clr-dark: #240115;
+    --clr-accent: #ffadd2;
+    --clr-text: #240115;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25;
@@ -41,8 +46,29 @@ html {
     scroll-behavior: smooth;
 }
 
+
+@keyframes bgcolor {
+    0% {
+        background-color: #412844
+    }
+
+    50% {
+        background-color: #633d5f;
+    }
+
+    100% {
+        background-color: #9f5a87
+    }
+}
+
+
 body{
-    background: var(--clr-dark);
+    /*Change background colors*/
+    -webkit-animation: bgcolor 10s infinite;
+    animation: bgcolor 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+
     color: var(--clr-accent);
     margin: 0;
     font-family: var(--ff-primary);
@@ -192,7 +218,7 @@ header {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background: var(--clr-text);
+    background: var(--clr-light);
     width:  2em;
     height: 3px;
     border-radius: 1em;
@@ -237,6 +263,7 @@ header {
         grid-area: img;
         min-width: 250px;
         position: relative;
+        border-radius: 50%;
     }
 
     .section__subtitle--intro {
@@ -256,16 +283,6 @@ header {
         text-align: left;
         position: relative;
         left: -0.75em;
-        width: calc(100% + 1.5em);
-    }
-
-    .section__subtitle--school {
-        align-self: start;
-        grid-column:  -1 / 1;
-        grid-row: 2;
-        text-align: left;
-        position: relative;
-        left: -1.5em;
         width: calc(100% + 1.5em);
     }
 }
@@ -291,6 +308,7 @@ header {
     }
 
     .section__subtitle--projects {
+        
     }
 }
 
