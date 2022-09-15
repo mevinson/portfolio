@@ -17,10 +17,12 @@
     --clr-dark: #572336;
     --clr-accent: #ff9575;
     --clr-text: #000000;
+
+        --clr-accent: #ffadd2;
     */
-    --clr-light: #ec85b8;
-    --clr-dark: #240115;
-    --clr-accent: #ffadd2;
+    --clr-light: #6a687a;
+    --clr-dark: #2c3d55;
+    --clr-accent: #ffffff;
     --clr-text: #240115;
 
     --fs-h1: 3rem;
@@ -49,15 +51,15 @@ html {
 
 @keyframes bgcolor {
     0% {
-        background-color: #412844
+        background-color: #2c3d55
     }
 
     50% {
-        background-color: #633d5f;
+        background-color: #324968;
     }
 
     100% {
-        background-color: #9f5a87
+        background-color: #385d8d;
     }
 }
 
