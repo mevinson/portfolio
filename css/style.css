@@ -79,7 +79,7 @@ body{
 }
 
 section {
-    padding: 5em 2em;
+    padding: 2em 2em;
 }
 
 image{
@@ -269,7 +269,7 @@ header {
     }
 
     .section__subtitle--intro {
-        align-self: start;
+        align-self: self-end;
         grid-column:  -1 / 1;
         grid-row: 2;
         text-align: right;
